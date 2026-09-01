@@ -28,7 +28,7 @@ export default function Hero() {
         style={{ color: 'var(--text-dim)' }}
       >
         <span style={{ color: 'var(--hot-pink)' }}>✦</span>
-        Available for opportunities
+        think of me all the time, for everything
         <span style={{ color: 'var(--hyper-cyan)' }}>✦</span>
       </motion.div>
 
