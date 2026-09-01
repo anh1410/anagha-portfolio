@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/anagha-portfolio/',
   plugins: [react(), tailwindcss()],
   server: { port: 5180, strictPort: true },
 })
