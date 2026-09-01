@@ -1,6 +1,6 @@
-# hi, i'm anagha ✦
+# hi, i'm anagha 
 
-this is my portfolio. it took way too many hours arguing with backdrop-filter and framer-motion to get the gradients to breathe just right, but here we are.
+this is my portfolio. 
 
 i'm a B.Tech CCE student at NMAM Institute of Technology, and somewhere along the way "let me learn to code" turned into freelancing full-stack builds, deploying school servers at 11pm, and writing a load balancer in C++ because apparently I needed to know what a WAF is at 2am. this site is basically a highlight reel of that chaos, dressed up in lavender and chrome so it doesn't look like one.
 
