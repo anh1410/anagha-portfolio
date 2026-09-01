@@ -7,7 +7,8 @@ export const profile = {
   phone: '6364679216',
   github: 'https://github.com/anh1410',
   linkedin: 'https://www.linkedin.com/in/anaghakatla/',
-  resumeUrl: '/AnaghaPrashanthKatla.pdf',
+  resumeUrl: `${import.meta.env.BASE_URL}AnaghaPrashanthKatla.pdf`,
+  photoUrl: `${import.meta.env.BASE_URL}anagha.jpeg`,
 };
 
 export const experience = [

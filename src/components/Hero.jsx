@@ -6,6 +6,21 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center px-6 text-center">
       <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7 }}
+        className="relative mb-6 h-32 w-32 rounded-full p-1"
+        style={{ background: 'var(--grad-1)', boxShadow: 'var(--shadow-glow)' }}
+      >
+        <img
+          src={profile.photoUrl}
+          alt={profile.name}
+          className="h-full w-full rounded-full object-cover"
+          style={{ border: '3px solid var(--bg)' }}
+        />
+      </motion.div>
+
+      <motion.div
         initial={{ opacity: 0, y: -12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
