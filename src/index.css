@@ -1,0 +1,107 @@
+@import 'tailwindcss';
+
+:root {
+  --bg: #f6f3fb;
+  --bg-soft: #ece5fb;
+  --surface: rgba(255, 255, 255, 0.55);
+  --surface-strong: rgba(255, 255, 255, 0.8);
+  --border: rgba(255, 255, 255, 0.6);
+  --text: #241a3d;
+  --text-dim: #6b5f8a;
+
+  --lavender: #b18cff;
+  --hyper-cyan: #4ee8ff;
+  --hot-pink: #ff5fc4;
+  --chrome: #d9d3ff;
+  --gold: #ffd166;
+
+  --grad-1: linear-gradient(135deg, #b18cff 0%, #4ee8ff 50%, #ff5fc4 100%);
+  --grad-2: linear-gradient(135deg, #ff5fc4 0%, #b18cff 100%);
+  --grad-chrome: linear-gradient(120deg, #fff 0%, #d9d3ff 25%, #fff 50%, #b18cff 75%, #fff 100%);
+
+  --shadow-glow: 0 8px 32px rgba(177, 140, 255, 0.25);
+  --shadow-card: 0 4px 24px rgba(90, 60, 150, 0.08);
+
+  --sans: 'Space Grotesk', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--hot-pink);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-soft);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--grad-1);
+  border-radius: 8px;
+}
+
+.text-gradient {
+  background: var(--grad-1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: shimmer 6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.glass {
+  background: var(--surface);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid var(--border);
+}
+
+.chrome-border {
+  position: relative;
+  border-radius: inherit;
+}
+.chrome-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: var(--grad-chrome);
+  background-size: 300% 300%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: chromeShift 5s linear infinite;
+  pointer-events: none;
+}
+@keyframes chromeShift {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 300% 300%; }
+}
+
+.font-mono {
+  font-family: var(--mono);
+}
