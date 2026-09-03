@@ -32,5 +32,3 @@ that's it. no ceremony.
 ## why this exists
 
 mostly because recruiters were going to look at a resume PDF anyway, and I'd rather they land somewhere that feels like me — a little extra, a little glowy, held together by genuine effort instead of a template.
-
-if you're reading this and want to talk about any of the projects above (or just want to tell me the color palette is unhinged), my inbox is open. ✦
